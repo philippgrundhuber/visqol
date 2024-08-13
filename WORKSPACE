@@ -85,7 +85,7 @@ git_repository(
 http_archive(
     name = "rules_pkg",
     sha256 = "352c090cc3d3f9a6b4e676cf42a6047c16824959b438895a76c2989c6d7c246a",
-    url = "https://github.com/bazelbuild/rules_pkg/releases/download/0.2.5/rules_pkg-0.2.5.tar.gz",
+    url = "https://github.com/bazelbuild/rules_pkg/releases/download/0.2.5/rules_pkg-0.2.5.tar.gz", 
 )
 
 # Begin TF WORKSPACE Loading
@@ -171,7 +171,8 @@ cc_library(
 """,
     sha256 = "53d7ad6124d06fdede8d839c091c649c794dae204666f1be0d30d7931737d635",
     strip_prefix = "armadillo-9.900.1",
-    urls = ["http://sourceforge.net/projects/arma/files/armadillo-9.900.1.tar.xz"],
+    # urls = ["http://sourceforge.net/projects/arma/files/armadillo-9.900.1.tar.xz"], old url, armadillo-9.900.1.tar.xz moved to 'retired' folder
+    urls = ["https://sourceforge.net/projects/arma/files/retired/armadillo-9.900.1.tar.xz"],
 )
 
 # PFFFT
